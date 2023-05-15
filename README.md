@@ -1,2 +1,5 @@
 # bloodtypes.net project
 Visualization of blood type distribution by country, based on data from Wikipedia https://en.wikipedia.org/wiki/Blood_type_distribution_by_country Using Flask and Python.
+## cs50 final project
+Web app generates Charts and maps using various Flask modules to read and data and to visualize it.
+
