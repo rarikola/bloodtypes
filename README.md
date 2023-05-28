@@ -293,3 +293,4 @@ def plot_graph():
 <p>I have also added the feedback.html file, which I made using Google Forms. I would have made it myself, but I don’t have PHP installed on my remote server at pythonanywhere.com. Besides, Google Forms are easy and nice. Fortunatly domain name bloodtypes.net was not taken and it was cheap.</p>
 
 <p>It took me around 4 weeks to finish the project. It was challenging, but I learned a lot.</p>
+    <p>[And here is the git link of the project]( https://github.com/rarikola/bloodtypes.git)</p>
