@@ -226,7 +226,8 @@ class MyForm(FlaskForm):
     submit = SubmitField('Submit')
 ```
 <p>The hardest part was to write the code below, after hundreds of errors and tries and it took me about i week to figure out the coreeect code.</p>
-    ```python
+    
+```python
     # Find the row corresponding to the selected country
     if rows:
         for row in rows:
