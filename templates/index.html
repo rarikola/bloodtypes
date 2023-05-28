@@ -1,0 +1,58 @@
+<html lang="en">
+<html>
+<head>
+    <title>Blood Type Distribution Maps</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="icon" type="image/x-icon" href="https://www.bloodtypes.net/static/rbclogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://www.bloodtypes.net/static/rbclogo.png" width="30" height="30" alt=""></a>
+        <a class="navbar-brand" href="https://www.bloodtypes.net" target="_self"><b>Blood Type Distribution</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="selectedOption">Maps</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{url_for('o')}}">Type O+</a>
+                        <a class="dropdown-item" href="https://www.bloodtypes.net/a">Type A+</a>
+                        <a class="dropdown-item" href="https://www.bloodtypes.net/b">Type B+</a>
+                        <a class="dropdown-item" href="https://www.bloodtypes.net/ab">Type AB+</a>
+                    </div>
+
+                </li>
+                        <a class="nav-link" href="https://www.bloodtypes.net/test">Contribute to the project</a>
+            </ul>
+        </div>
+                        <a class="nav-link" href="https://www.bloodtypes.net/feedback">Feedback</a>
+
+      </nav>
+{% block body %}
+    <div class="center" >
+<h1>Rh positive blood type distribution worldwide</h1>
+<p>According to <a href="https://en.wikipedia.org/wiki/Blood_type_distribution_by_country" target="_blank">Wikipedia</a>, 93.66% of the world's population has a Rhesus-positive blood type.
+Of which 37.37% have type O, 27.24% have type A, 22.83% have type B and 6.22% have type AB. As of, which blood type is older., Because group O blood can be received by anyone in a blood transfusion,
+it was originally thought that this was the ancestral blood type, but more recent work suggests that there are several different mutations that can deactivate the A or B genes to turn them into O.
+This makes a firm evolutionary timeline much harder to establish and there are several competing theories that contradict each other. What scientists agree on is that AB is the most recent and didn’t occur until the 16th Century
+when group A populations from Europe and group B populations from Asia began to mix.The other blood groups are tens of thousands of years old with B being more recent than A.The oldest group is either group A or one of the forms of group O.</p>
+<br>
+<img src="https://www.bloodtypes.net/static/aplus.png" width="1600px">
+<br><br>
+<img src="https://www.bloodtypes.net/static/BAOzA1.png" width="800px">
+&nbsp;
+<img src="https://www.bloodtypes.net/static/BAOzO21.png" width="800px">
+<br><br>
+
+
+    </div>
+{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
