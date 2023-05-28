@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<table align="center"><tr><td>
+
+<br>
+    <form id="form" action="/test" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.csrf_token }}
+        {{ form.country.label }} {{ form.country }}&nbsp;
+        {{ form.blood_type.label }} {{ form.blood_type }}&nbsp;
+        {{ form.submit() }}&nbsp;
+        {% if submitted %}
+    Thank you, your data was submitted.
+{% else %}
+    The maps based on user-submitted data
+    <!-- Placeholder form fields -->
+{% endif %}
+    </form></td><td align="right">
+    &nbsp;&nbsp;<button type="button" onClick="document.getElementById('frametest').src='https://www.bloodtypes.net/bto'"> O </button>
+    &nbsp;&nbsp;<button type="button" onClick="document.getElementById('frametest').src='https://www.bloodtypes.net/bta'"> A </button>
+    &nbsp;&nbsp;<button type="button" onClick="document.getElementById('frametest').src='https://www.bloodtypes.net/btb'"> B </button>
+    &nbsp;&nbsp;<button type="button" onClick="document.getElementById('frametest').src='https://www.bloodtypes.net/btab'"> AB </button>
+</td></tr></table>
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="map-container">
+            <style>
+                iframe {
+                    width: 98vw;
+                    height: 98vh;
+                    border: none;
+                }
+            </style>
+
+<iframe src="https://www.bloodtypes.net/bta" id="frametest" ></iframe>
+
+        </div>
+    </div>
+
+{% endblock %}
