@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="map-container">
+        <style>
+            iframe {
+                width: 98vw;
+                height: 98vh;
+                border: none;
+            }
+        </style>
+        <iframe src="https://www.bloodtypes.net/typeo"></iframe>
+    </div>
+</div>
+
+{% endblock %}
