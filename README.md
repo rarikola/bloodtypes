@@ -288,7 +288,7 @@ def plot_graph():
     return render_template('plot.html', plot_data=plot_data)
 ```
 
-<p>Then I made a screenshot of the generated map and put the image file in index.html so the first page could load faster. I have also merged maps filtered by the different blood types, which are also displayed in an index.html.</p>
+<p>Then I made a screenshot of the generated graph and put the image file in index.html so the first page could load faster. I have also merged maps filtered by the different blood types, which are also displayed in an index.html.</p>
 
 <p>I have also added the feedback.html file, which I made using Google Forms. I would have made it myself, but I don’t have PHP installed on my remote server at pythonanywhere.com. Besides, Google Forms are easy and nice. Fortunatly domain name bloodtypes.net was not taken and it was cheap.</p>
 
