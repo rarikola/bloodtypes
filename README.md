@@ -35,7 +35,7 @@ def typea():
 ```
 
 
-<p>Since Folium can compare only 2 columns, I made 4 functions and 4 paths to filter data by blood types. That was the easy part. The hard part was to write code to get data from users and display the updated map. Here is the code:</p>
+<p>Since Folium can compare only 2 columns, I made 4 functions and 4 paths to filter the data by blood types. That was the easy part. The hard part was to write the code to get data from users and display the updated map. Here is the code:</p>
 
 
 
@@ -225,7 +225,7 @@ class MyForm(FlaskForm):
     blood_type = SelectField('Blood Type', choices=[('A', 'A'), ('B', 'B'), ('AB', 'AB'), ('O', 'O')])
     submit = SubmitField('Submit')
 ```
-<p>The hardest part was to write the code below, after hundreds of errors and tries and it took me about i week to figure out the coreeect code.</p>
+<p>The hardest part was to write the code below, after hundreds of errors and tries and it took me about a week to figure out the correct code.</p>
     
 ```python
     # Find the row corresponding to the selected country
@@ -255,7 +255,7 @@ class MyForm(FlaskForm):
         writer.writerows(rows)
 ```
 
-<p>I've also generated graph using this code:</p>
+<p>I've also generated the graph using the code below:</p>
 
 ```python
 @app.route('/graphs')
