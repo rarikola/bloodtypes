@@ -41,7 +41,7 @@ def ab():
 def feedback():
     return render_template("feedback.html")
 
-@app.route('/contribute', methods=['GET', 'POST'])
+@app.route('/test', methods=['GET', 'POST'])
 def form():
     form = MyForm()
 
@@ -51,7 +51,7 @@ def form():
 
         # Check if the user has already submitted the form
         if session.get('submitted'):
-            return redirect('/contribute')
+            return redirect('/test')
 
         # Update the CSV file
         update_csv(country, blood_type)
@@ -59,7 +59,7 @@ def form():
         # Mark the form as submitted
         session['submitted'] = True
 
-        return redirect('/contribute')
+        return redirect('/test')
     print(form.blood_type.data)
     return render_template('form.html', form=form, submitted=session.get('submitted'), blood_type=form.blood_type.data)
 
