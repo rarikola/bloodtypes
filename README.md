@@ -1,7 +1,7 @@
 # Rh positive blood type distribution worldwide
 #### Video Demo:  <[DEMO](https://www.youtube.com/watch?v=XQXZ1I_Chd8)>
 #### Description:
-<p>The project is about visualization of blood type distribution by country.The project is hosted on pythonanywhere.com and the domain name is [bloodtypes.net](https://www.bloodtypes.net/). I used data from <[Wikipedia](https://en.wikipedia.org/wiki/Blood_type_distribution_by_country)> to generate interactive maps and graphs using folium.Choropleth. I’ve also added the functionality for users to submit their blood type, save it in a CSV file, and display the updated map from user-submitted data.</p>
+<p>The project is about visualization of blood type distribution by country.The project is hosted on pythonanywhere.com and the domain name is [bloodtypes.net](https://www.bloodtypes.net/). I used data from [Wikipedia](https://en.wikipedia.org/wiki/Blood_type_distribution_by_country) to generate interactive maps and graphs using folium.Choropleth. I’ve also added the functionality for users to submit their blood type, save it in a CSV file, and display the updated map from user-submitted data.</p>
 
 <p>The  project is written in Flask, using Python. Here is the code to display maps from the data downloaded from [Wikipedia](https://en.wikipedia.org/wiki/Blood_type_distribution_by_country), which I converted to CSV file:</p>
 
